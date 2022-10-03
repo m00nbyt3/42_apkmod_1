@@ -1,4 +1,4 @@
-.class public Lcom/unity3d/player/CheatClass; # Here change your package name
+.class public Lcom/unity3d/player/CheatClass; # Cambiar el nombre del paquete
 .super Ljava/lang/Object;
 .source "CheatClass.java"
 
@@ -11,12 +11,12 @@
     return-void
 .end method
 
-.method public static addCoins(Landroid/app/Activity;)V
+.method public static addCoins(Landroid/app/Activity;)V # Cambiar el nombre de la funcion
     .locals 4
     .param p0, "context"
 
     .line 9
-    const-string v0, "player_prefs" # Here change the preference file name
+    const-string v0, "player_prefs" # Cambiar el nombre del archivo de preferencias
 
     const/4 v1, 0x0
 
@@ -32,9 +32,9 @@
 
     .line 11
     .local v1, "editor":Landroid/content/SharedPreferences$Editor;
-    const-string v2, "money_count" # Here the key name
+    const-string v2, "money_count" # Cambiar el nombre de la preferencia
 
-    const v3, 0x5f5e0ff # And here the value to change
+    const v3, 0x5f5e0ff # Cambiar el valor de la preferencia (en hexadecimal, sin 0 al inicio)
 
     invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
